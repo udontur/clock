@@ -13,7 +13,7 @@ https://launeedsa.github.io/clock/
 
 version:
 
-1.0: 
-Date: 07/25/2023
-Update: first release
+1.0: <br />
+Date: 07/25/2023 <br />
+Update: first release <br />
 
