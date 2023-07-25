@@ -1,13 +1,14 @@
 # Clock
-A digital clock that follow local time
-Hello everyone 👋
+A digital clock that follow local time <br />
+The promotion message: <br />
+Hello everyone 👋 <br />
 I am excited to share that I have created a website! 
 This website displays a digital clock in the middle.
 Features:
 - Clean and minimalist design that reduce distraction
 - Dark mode design that minimizes eye strains
 - Highly accurate as it follows the local time
-Version: 1.0
+Version: 1.0 <br />
 Check it out now and see for yourself! 👇
 https://launeedsa.github.io/clock/
 
