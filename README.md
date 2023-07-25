@@ -1,5 +1,6 @@
 # Clock
-A digital clock that follow local time <br />
+A digital clock that follow local time
+
 The promotion message: <br />
 Hello everyone 👋 <br />
 I am excited to share that I have created a website! 
@@ -12,7 +13,7 @@ Version: 1.0 <br />
 Check it out now and see for yourself! 👇 <br />
 https://launeedsa.github.io/clock/
 
-version: <br />
+Version: <br />
 1.0: <br />
 Date: 07/25/2023 <br />
 Update: first release <br />
