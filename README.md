@@ -7,13 +7,12 @@ This website displays a digital clock in the middle.
 Features:
 - Clean and minimalist design that reduce distraction
 - Dark mode design that minimizes eye strains
-- Highly accurate as it follows the local time
+- Highly accurate as it follows the local time <br />
 Version: 1.0 <br />
-Check it out now and see for yourself! 👇
+Check it out now and see for yourself! 👇 <br />
 https://launeedsa.github.io/clock/
 
-version:
-
+version: <br />
 1.0: <br />
 Date: 07/25/2023 <br />
 Update: first release <br />
