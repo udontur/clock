@@ -1,4 +1,4 @@
-# clock
+# Clock
 A digital clock that follow local time
 Hello everyone 👋
 I am excited to share that I have created a website! 
@@ -10,5 +10,6 @@ Features:
 Version: 1.0
 Check it out now and see for yourself! 👇
 https://launeedsa.github.io/clock/
+
 version:
 1.0 -first version
