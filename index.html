@@ -2,32 +2,59 @@
 <html>
     <head>
         <title>Clock</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
         <style>
-            body {
+            body{
                 background-color: #181818;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 100vh;
-                font-size: 25em;
-                font-family: Arial, sans-serif;
+                font-family: "JetBrains Mono", monospace;
                 color: white;
-                margin: 0; 
+                font-size: 30px;
+            }
+            h1{
+                color: #a3dbce;
+                margin-top: 100px;
+                margin-bottom: -20px;
+                font-size: 100px;
+            }
+            h2{
+                color: rgb(200, 200, 200);
+                font-size: 30px;
+                margin-bottom: 90px;
+                font-weight: normal;
+            }
+            button{
+                background-color: #ffffff;
+                font-family: "JetBrains Mono", monospace;
+                font-size: 30px;
+                color: #181818;
+                padding: 10px;
+                padding-left: 20px;
+                padding-right: 20px;
+                border-radius: 12px;
+                border: none;
                 font-weight: 600;
+                cursor: pointer;
+                transition-duration: 0.3s;
+            }
+            button:hover{
+                background-color: #e0e0e0;
+                box-shadow: 3px 3px 3px #acacac;
             }
         </style>
     </head>
     <body>
+        <center><h1>Hadrian Lau's Website</h1></center>
+        <center><h2>Website under construction</h2></center>
+        <center><h3>My stuff</h3></center>
+        <center>
+            <a href="https://github.com/udontur"><button>GitHub Profile</button></a>
+            <a href="https://github.com/udontur/cp"><button>Code archive</button></a>
+            <a href="https://udontur.github.io/clock.html"><button>Clock</button></a>
+        </center>
         <script>
-            function updateClock() {
-                const now = new Date();
-                const hours = now.getHours().toString().padStart(2, "0");
-                const minutes = now.getMinutes().toString().padStart(2, "0");
-                const seconds = now.getSeconds().toString().padStart(2, "0");
-                document.body.textContent = `${hours}:${minutes}:${seconds}`;
-            }
-            updateClock();
-            setInterval(updateClock, 1000);
+            
         </script>
     </body>
 </html>
