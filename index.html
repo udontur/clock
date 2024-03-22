@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Clock</title>
+        <title>Hadrian</title>
+        <link rel="icon" type="image/x-icon" href="/img/udontur.jpeg">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
@@ -9,7 +10,7 @@
             body{
                 background-color: #181818;
                 font-family: "JetBrains Mono", monospace;
-                color: white;
+                color: #a3dbce;
                 font-size: 30px;
             }
             h1{
@@ -20,38 +21,54 @@
             }
             h2{
                 color: rgb(200, 200, 200);
-                font-size: 30px;
+                font-size: 20px;
                 margin-bottom: 90px;
                 font-weight: normal;
             }
             button{
-                background-color: #ffffff;
+                background-color: #a3dbce;
                 font-family: "JetBrains Mono", monospace;
-                font-size: 30px;
+                font-size: 20px;
                 color: #181818;
                 padding: 10px;
                 padding-left: 20px;
                 padding-right: 20px;
-                border-radius: 12px;
                 border: none;
                 font-weight: 600;
                 cursor: pointer;
                 transition-duration: 0.3s;
+                height: 50px;
+                width: 200px;
             }
             button:hover{
                 background-color: #e0e0e0;
                 box-shadow: 3px 3px 3px #acacac;
             }
+            .leftwhole{
+                border-bottom-left-radius: 12px;
+            }
+            .rightwhole{
+                border-bottom-right-radius: 12px;
+            }
+            .normal{
+                margin-left: -8.5px;
+                margin-right: -8.5px;
+            }
+            .udonturstr{
+                border-top-left-radius: 12px;
+                border-top-right-radius: 12px;
+                margin-top: 70px;
+                width: 617px;
+            }
         </style>
     </head>
     <body>
-        <center><h1>Hadrian Lau's Website</h1></center>
-        <center><h2>Website under construction</h2></center>
-        <center><h3>My stuff</h3></center>
+        <center><h1>Hadrian's Website</h1></center>
+        <center><img class="udonturstr" src="img/udonturelong.png"></center>
         <center>
-            <a href="https://github.com/udontur"><button>GitHub Profile</button></a>
-            <a href="https://github.com/udontur/cp"><button>Code archive</button></a>
-            <a href="https://udontur.github.io/clock.html"><button>Clock</button></a>
+            <a href="https://github.com/udontur"><button class="leftwhole">GitHub</button></a>
+            <a class="normal" href="https://github.com/udontur/cp"><button>OI Code</button></a>
+            <a class="rightwhole" href="https://udontur.github.io/page/clock.html"><button class="rightwhole">Clock</button></a>
         </center>
         <script>
             
