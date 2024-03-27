@@ -10,22 +10,111 @@
             body{
                 background-color: #181818;
                 font-family: "JetBrains Mono", monospace;
+                scroll-behavior: smooth;
+            }
+            ::-moz-selection {
+                background-color: transparent;
+            }
+
+            ::selection {
+                background-color: transparent;
+            }
+            .WebsiteTitle{
                 color: #a3dbce;
                 font-size: 30px;
+                font-size: 70px;
             }
-            h1{
-                color: #a3dbce;
-                margin-top: 100px;
-                margin-bottom: -20px;
-                font-size: 100px;
+            .TitleImage{
+                border-radius: 30px;
+                width: 608px;
+                margin-bottom: -6px;
             }
-            h2{
-                color: rgb(200, 200, 200);
+            .TitleBox{
+                background-color: #a3dbce;
+                font-family: "JetBrains Mono", monospace;
+                font-size: 30px;
+                color: #181818;
+                padding: 10px;
+                padding-left: 20px;
+                padding-right: 20px;
+                border: none;
+                font-weight: 600;
+                height: 65px;
+                width: 608px;
+                border-top-left-radius: 12px;
+                border-top-right-radius: 12px;
+                margin-bottom: 4px;
+                margin-top: 16px;
+            }
+            .MainButton{
+                background-color: #a3dbce;
+                font-family: "JetBrains Mono", monospace;
                 font-size: 20px;
-                margin-bottom: 90px;
-                font-weight: normal;
+                color: #181818;
+                padding: 10px;
+                padding-left: 20px;
+                padding-right: 20px;
+                border: none;
+                font-weight: 600;
+                cursor: pointer;
+                transition-duration: 0.3s;
+                margin-left: -2.9px;
+                margin-right: -2.9px;
+                height: 50px;
+                width: 200px;
+                margin-bottom: 4px;
             }
-            button{
+            .MainButton:hover{
+                background-color: #e0e0e0;
+                box-shadow: 3px 3px 3px #acacac;
+            }
+            .MainButtonLeftBottom{
+                background-color: #a3dbce;
+                font-family: "JetBrains Mono", monospace;
+                font-size: 20px;
+                color: #181818;
+                padding: 10px;
+                padding-left: 20px;
+                padding-right: 20px;
+                border: none;
+                font-weight: 600;
+                cursor: pointer;
+                transition-duration: 0.3s;
+                margin-left: -2.9px;
+                margin-right: -2.9px;
+                height: 50px;
+                width: 200px;
+                margin-bottom: 4px;
+                border-bottom-left-radius: 12px;
+            }
+            .MainButtonLeftBottom:hover{
+                background-color: #e0e0e0;
+                box-shadow: 3px 3px 3px #acacac;
+            }
+            .MainButtonRightBottom{
+                background-color: #a3dbce;
+                font-family: "JetBrains Mono", monospace;
+                font-size: 20px;
+                color: #181818;
+                padding: 10px;
+                padding-left: 20px;
+                padding-right: 20px;
+                border: none;
+                font-weight: 600;
+                cursor: pointer;
+                transition-duration: 0.3s;
+                margin-left: -2.9px;
+                margin-right: -2.9px;
+                height: 50px;
+                width: 200px;
+                margin-bottom: 4px;
+                border-bottom-right-radius: 12px;
+            }
+            .MainButtonRightBottom:hover{
+                background-color: #e0e0e0;
+                box-shadow: 3px 3px 3px #acacac;
+            }
+            .BackToTopButton{
                 background-color: #a3dbce;
                 font-family: "JetBrains Mono", monospace;
                 font-size: 20px;
@@ -39,37 +128,111 @@
                 transition-duration: 0.3s;
                 height: 50px;
                 width: 200px;
+                margin-bottom: 4px;
+                border-radius: 12px;
             }
-            button:hover{
+            .BackToTopButton:hover{
                 background-color: #e0e0e0;
                 box-shadow: 3px 3px 3px #acacac;
             }
-            .leftwhole{
-                border-bottom-left-radius: 12px;
-            }
-            .rightwhole{
-                border-bottom-right-radius: 12px;
-            }
-            .normal{
-                margin-left: -8.5px;
-                margin-right: -8.5px;
-            }
-            .udonturstr{
-                border-top-left-radius: 12px;
-                border-top-right-radius: 12px;
-                margin-top: 70px;
-                width: 617px;
+            footer {
+                font-size: 12px;
+                text-align: center;
+                padding: 2px;
+                background-color: #a3dbce;
             }
         </style>
     </head>
     <body>
-        <center><h1>Hadrian's Website</h1></center>
-        <center><img class="udonturstr" src="image/udonturelong.png"></center>
         <center>
-            <a href="https://github.com/udontur"><button class="leftwhole">GitHub</button></a>
-            <a class="normal" href="https://github.com/udontur/cp"><button>OI Code</button></a>
-            <a class="rightwhole" href="https://udontur.github.io/page/clock.html"><button class="rightwhole">Clock</button></a>
+            <h1 class="WebsiteTitle">
+                Hadrian's Website
+            </h1>
         </center>
+        <center>
+            <img class="TitleImage" src="image/udonturelong.png">
+        </center>
+        <center>
+            <button class="TitleBox">
+                🐢 Hadrian
+            </button>
+        </center>
+        <center>
+            <button onclick="window.location='https://github.com/udontur/cp/';" class="MainButtonLeftBottom">
+                OI Code
+            </button>
+            <button onclick="window.location='https://github.com/udontur/';" class="MainButton">
+                GitHub
+            </button>
+            <button onclick="window.location='https://udontur.github.io/page/clock.html/';" class="MainButtonRightBottom">
+                Clock
+            </button>
+        </center>
+        <center>
+            <button class="TitleBox">
+                🖥️ Programming
+            </button>
+        </center>
+        <center>
+            <button onclick="window.location='https://github.com/udontur/';" class="MainButton">
+                GitHub
+            </button>
+            <button onclick="window.location='https://codeforces.com/profile/udontur/';" class="MainButton">
+                CodeForces
+            </button>
+            <button onclick="window.location='https://leetcode.com/udontur/';" class="MainButton">
+                LeetCode
+            </button>
+        </center>
+        <center>
+            <button onclick="window.location='https://www.hackerrank.com/profile/udontur/';" class="MainButton">
+                HackerRank
+            </button>
+            <button onclick="window.location='https://www.linkedin.com/in/hadrianlaucs/';" class="MainButton">
+                LinkedIn
+            </button>
+            <button onclick="window.location='https://judge.hkoi.org/user/wy_hadrianlau/';" class="MainButton">
+                HKOI
+            </button>
+        </center>
+        <center>
+            <button onclick="window.location='https://cses.fi/user/216220/';" class="MainButtonLeftBottom">
+                CSES
+            </button>
+            <button onclick="window.location='https://www.khanacademy.org/profile/udontur/';" class="MainButton">
+                Khan
+            </button>
+            <button onclick="window.location='https://dmoj.ca/user/udontur/';" class="MainButtonRightBottom">
+                DMOJ
+            </button>
+        </center>
+        <center>
+            <button class="TitleBox">
+                🤝 Socials
+            </button>
+        </center>
+        <center>
+            <button onclick="window.location='https://github.com/udontur/';" class="MainButtonLeftBottom">
+                GitHub
+            </button>
+            <button onclick="window.location='https://www.linkedin.com/in/hadrianlaucs/';" class="MainButton">
+                LinkedIn
+            </button>
+            <button onclick="window.location='https://www.instagram.com/udon.tur/';" class="MainButtonRightBottom">
+                Instagram
+            </button>
+        </center>
+        <br>
+        <br>
+        <br>
+        <center>
+            <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" class="BackToTopButton">
+                Back to top
+            </button>
+        </center>
+        <br>
+        <br>
+        <footer>© 2024 Hadrian</footer>
         <script>
             
         </script>
