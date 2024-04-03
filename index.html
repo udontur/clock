@@ -11,6 +11,8 @@
                 background-color: #181818;
                 font-family: "JetBrains Mono", monospace;
                 scroll-behavior: smooth;
+                max-width: 608px;
+                margin: 0 auto;
             }
             ::-moz-selection {
                 background-color: transparent;
@@ -23,11 +25,13 @@
                 color: #a3dbce;
                 font-size: 30px;
                 font-size: 70px;
+                margin-top: 0px;
+                margin-bottom: 0px;
             }
             .TitleImage{
                 border-radius: 30px;
                 width: 608px;
-                margin-bottom: -6px;
+                margin-bottom: 4px;
             }
             .TitleBox{
                 background-color: #a3dbce;
@@ -44,7 +48,7 @@
                 border-top-left-radius: 12px;
                 border-top-right-radius: 12px;
                 margin-bottom: 4px;
-                margin-top: 16px;
+                margin-top: 9px;
             }
             .MainButton{
                 background-color: #a3dbce;
@@ -58,13 +62,33 @@
                 font-weight: 600;
                 cursor: pointer;
                 transition-duration: 0.3s;
-                margin-left: -2.9px;
-                margin-right: -2.9px;
                 height: 50px;
                 width: 200px;
                 margin-bottom: 4px;
             }
             .MainButton:hover{
+                background-color: #e0e0e0;
+                box-shadow: 3px 3px 3px #acacac;
+            }
+            .MainButtonMiddle{
+                background-color: #a3dbce;
+                font-family: "JetBrains Mono", monospace;
+                font-size: 20px;
+                color: #181818;
+                padding: 10px;
+                padding-left: 20px;
+                padding-right: 20px;
+                border: none;
+                font-weight: 600;
+                cursor: pointer;
+                transition-duration: 0.3s;
+                height: 50px;
+                width: 200px;
+                margin-left: 4px;
+                margin-right: 4px;
+                margin-bottom: 4px;
+            }
+            .MainButtonMiddle:hover{
                 background-color: #e0e0e0;
                 box-shadow: 3px 3px 3px #acacac;
             }
@@ -80,8 +104,6 @@
                 font-weight: 600;
                 cursor: pointer;
                 transition-duration: 0.3s;
-                margin-left: -2.9px;
-                margin-right: -2.9px;
                 height: 50px;
                 width: 200px;
                 margin-bottom: 4px;
@@ -103,8 +125,6 @@
                 font-weight: 600;
                 cursor: pointer;
                 transition-duration: 0.3s;
-                margin-left: -2.9px;
-                margin-right: -2.9px;
                 height: 50px;
                 width: 200px;
                 margin-bottom: 4px;
@@ -130,111 +150,199 @@
                 width: 200px;
                 margin-bottom: 4px;
                 border-radius: 12px;
+                align-items: center;
+                justify-content: center;
+                margin-top: 56px;
+                margin-bottom: 60px;
             }
             .BackToTopButton:hover{
                 background-color: #e0e0e0;
                 box-shadow: 3px 3px 3px #acacac;
             }
-            footer {
+            .RotateText{
+                color: #a3dbce;
+                font-size: 30px;
+                font-size: 70px;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                margin-left: 30px;
+                line-height: 0;
+                &:nth-of-type(1){
+                    color: #00ffc3;
+                }
+            }
+            .footer {
                 font-size: 12px;
-                text-align: center;
                 padding: 2px;
                 background-color: #a3dbce;
+                text-align: center;
+            }
+            .container {
+                display: flex;
             }
         </style>
     </head>
     <body>
-        <center>
-            <h1 class="WebsiteTitle">
-                Hadrian's Website
-            </h1>
-        </center>
-        <center>
-            <img class="TitleImage" src="image/udonturelong.png">
-        </center>
-        <center>
-            <button class="TitleBox">
-                🐢 Hadrian
-            </button>
-        </center>
-        <center>
-            <button onclick="window.location='https://github.com/udontur/cp';" class="MainButtonLeftBottom">
-                OI Code
-            </button>
-            <button onclick="window.location='https://github.com/udontur';" class="MainButton">
-                GitHub
-            </button>
-            <button onclick="window.location='https://udontur.github.io/page/clock.html';" class="MainButtonRightBottom">
-                Clock
-            </button>
-        </center>
-        <center>
-            <button class="TitleBox">
-                🖥️ Programming
-            </button>
-        </center>
-        <center>
-            <button onclick="window.location='https://github.com/udontur';" class="MainButton">
-                GitHub
-            </button>
-            <button onclick="window.location='https://codeforces.com/profile/udontur';" class="MainButton">
-                CodeForces
-            </button>
-            <button onclick="window.location='https://leetcode.com/udontur';" class="MainButton">
-                LeetCode
-            </button>
-        </center>
-        <center>
-            <button onclick="window.location='https://www.hackerrank.com/profile/udontur';" class="MainButton">
-                HackerRank
-            </button>
-            <button onclick="window.location='https://www.linkedin.com/in/hadrianlaucs';" class="MainButton">
-                LinkedIn
-            </button>
-            <button onclick="window.location='https://judge.hkoi.org/user/wy_hadrianlau';" class="MainButton">
-                HKOI
-            </button>
-        </center>
-        <center>
-            <button onclick="window.location='https://cses.fi/user/216220';" class="MainButtonLeftBottom">
-                CSES
-            </button>
-            <button onclick="window.location='https://www.khanacademy.org/profile/udontur';" class="MainButton">
-                Khan
-            </button>
-            <button onclick="window.location='https://dmoj.ca/user/udontur';" class="MainButtonRightBottom">
-                DMOJ
-            </button>
-        </center>
-        <center>
-            <button class="TitleBox">
-                🤝 Socials
-            </button>
-        </center>
-        <center>
-            <button onclick="window.location='https://github.com/udontur';" class="MainButtonLeftBottom">
-                GitHub
-            </button>
-            <button onclick="window.location='https://www.linkedin.com/in/hadrianlaucs';" class="MainButton">
-                LinkedIn
-            </button>
-            <button onclick="window.location='https://www.instagram.com/udon.tur';" class="MainButtonRightBottom">
-                Instagram
-            </button>
-        </center>
-        <br>
-        <br>
-        <br>
-        <center>
-            <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" class="BackToTopButton">
-                Back to top
-            </button>
-        </center>
-        <br>
-        <br>
-        <footer>© 2024 Hadrian</footer>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>  
+            <br>
+            <div class="container">
+                <h1 class="WebsiteTitle">
+                    Hello World!👋
+                </h1>
+            </div>
+            <div class="container">
+                <h1 class="WebsiteTitle">
+                    I'm
+                </h1>
+                <div class="rotate">
+                    <p class="RotateText">Hadrian</p>
+                    <p class="RotateText">Programmer</p>
+                    <p class="RotateText">CS lover</p>
+                    <p class="RotateText">Math lover</p>
+                </div>
+            </div>
+            <!--
+                Hadrian
+                Programmer
+                CS lover
+                Math lover
+                Grade 9
+            -->
+            <br>
+            <div class="container">
+                <img class="TitleImage" src="image/udonturelong.png">
+            </div>
+            <div class="container">
+                <button class="TitleBox">
+                    🐢 Hadrian
+                </button>
+            </div>
+            <div class="container">
+                <button onclick="window.location='https://github.com/udontur/cp';" class="MainButtonLeftBottom">
+                    OI Code
+                </button>
+                <button onclick="window.location='https://github.com/udontur';" class="MainButtonMiddle">
+                    GitHub
+                </button>
+                <button onclick="window.location='https://udontur.github.io/page/clock.html';" class="MainButtonRightBottom">
+                    Clock
+                </button>
+            </div>
+            <div class="container">
+                <button class="TitleBox">
+                    🖥️ Programming
+                </button>
+            </div>
+            <div class="container">         
+                <button onclick="window.location='https://www.linkedin.com/in/hadrianlaucs';" class="MainButton">
+                    LinkedIn
+                </button>
+                <button onclick="window.location='https://github.com/udontur';" class="MainButtonMiddle">
+                    GitHub
+                </button>
+                <button onclick="window.location='https://leetcode.com/udontur';" class="MainButton">
+                    LeetCode
+                </button>
+            </div>
+            <div class="container">        
+                <button onclick="window.location='https://codeforces.com/profile/udontur';" class="MainButtonLeftBottom">
+                    CodeForces
+                </button>
+                <button onclick="window.location='https://judge.hkoi.org/user/wy_hadrianlau';" class="MainButtonMiddle">
+                    HKOI
+                </button>
+                <button onclick="window.location='https://www.khanacademy.org/profile/udontur';" class="MainButtonRightBottom">
+                    Khan
+                </button>
+            </div>
+            <div class="container">   
+                <button class="TitleBox">
+                    🤝 Socials
+                </button>
+            </div>
+            <div class="container">
+                <button onclick="window.location='https://www.linkedin.com/in/hadrianlaucs';" class="MainButtonLeftBottom">
+                    LinkedIn
+                </button>
+                <button onclick="window.location='https://github.com/udontur';" class="MainButtonMiddle">
+                    GitHub
+                </button>
+                <button onclick="window.location='https://www.instagram.com/udon.tur';" class="MainButtonRightBottom">
+                    Instagram
+                </button>
+            </div> 
+            <center>
+                <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" class="BackToTopButton">
+                    Back to top
+                </button>
+            </center> 
+            <footer class="footer">
+                <cetner>
+                    © 2024 Hadrian
+                </cetner>
+            </footer>
         <script>
-            
+            class SplitTextJS {
+            constructor(_target) {
+                this.result = new Object()
+                this.result.originalText = _target.innerText
+                this.result.splitted = this.split(_target)
+                this.result.words = this.result.splitted.getElementsByClassName('.SplitTextJS-wrapper')
+                this.result.chars = this.result.splitted.getElementsByClassName('.SplitTextJS-char')
+                this.result.spaces = this.result.splitted.getElementsByClassName('.SplitTextJS-spacer')
+                return this.result
+            }
+            createSpan(_class) {
+                let span = document.createElement('span')
+                span.style.display = "inline-block"
+                span.className = _class
+                return span
+            }
+            split(_target) {
+                let containerArray = new Array
+                const splittedTarget = _target.innerText.split(' ')
+                let counter = splittedTarget.length
+                splittedTarget.map(word => {
+                    const wrapper = this.createSpan('SplitTextJS-wrapper')
+                    word.split(/(?!^)/).map(char => {
+                        let el = this.createSpan('SplitTextJS-char')
+                        el.innerText = char
+                        wrapper.appendChild(el)
+                    })
+                    counter--
+                    containerArray.push(wrapper)
+                    if (counter > 0) {
+                        let space = this.createSpan('SplitTextJS-char SplitTextJS-spacer')
+                        space.innerHTML = '&nbsp;'
+                        containerArray.push(space)
+                    }
+                })
+                _target.innerHTML = ''
+                containerArray.forEach(child => {
+                    _target.appendChild(child)
+                })
+                return _target
+            }
+        }
+            console.log("Hello");
+            const titles = gsap.utils.toArray('.RotateText');
+            const tl = gsap.timeline();
+
+            titles.forEach(title => {
+                const splitTitle = new SplitTextJS(title);
+                tl
+                    .from(splitTitle.chars, {
+                    opacity: 0,
+                    y: 80,
+                    rotationX: -90
+                    }, "<")
+
+                    .to(splitTitle.chars, {
+                    opacity: 0,
+                    y: 80,
+                    rotationX: -90
+                    }, "<0.5")
+            });
         </script>
     </body>
 </html>
