@@ -200,22 +200,6 @@
             </div>
             <div class="container">
                 <button class="TitleBox">
-                    🐢 Hadrian
-                </button>
-            </div>
-            <div class="container">
-                <button onclick="window.location='https://github.com/udontur/cp';" class="MainButtonLeftBottom">
-                    Code Vault
-                </button>
-                <button onclick="window.location='https://github.com/udontur';" class="MainButtonMiddle">
-                    GitHub
-                </button>
-                <button onclick="window.location='https://udontur.github.io/page/clock.html';" class="MainButtonRightBottom">
-                    Clock
-                </button>
-            </div>
-            <div class="container">
-                <button class="TitleBox">
                     🖥️ Programming
                 </button>
             </div>
@@ -254,7 +238,7 @@
                     Clock
                 </button>
                 <button onclick="window.location='https://udontur.github.io/page/clock_nosec.html';" class="MainButtonRightBottom">
-                    Clock no Sec
+                    Clock (no s)
                 </button>
             </div>
             <div class="container">   
@@ -284,67 +268,7 @@
                 </cetner>
             </footer>
         <script>
-            class SplitTextJS {
-            constructor(_target) {
-                this.result = new Object()
-                this.result.originalText = _target.innerText
-                this.result.splitted = this.split(_target)
-                this.result.words = this.result.splitted.getElementsByClassName('.SplitTextJS-wrapper')
-                this.result.chars = this.result.splitted.getElementsByClassName('.SplitTextJS-char')
-                this.result.spaces = this.result.splitted.getElementsByClassName('.SplitTextJS-spacer')
-                return this.result
-            }
-            createSpan(_class) {
-                let span = document.createElement('span')
-                span.style.display = "inline-block"
-                span.className = _class
-                return span
-            }
-            split(_target) {
-                let containerArray = new Array
-                const splittedTarget = _target.innerText.split(' ')
-                let counter = splittedTarget.length
-                splittedTarget.map(word => {
-                    const wrapper = this.createSpan('SplitTextJS-wrapper')
-                    word.split(/(?!^)/).map(char => {
-                        let el = this.createSpan('SplitTextJS-char')
-                        el.innerText = char
-                        wrapper.appendChild(el)
-                    })
-                    counter--
-                    containerArray.push(wrapper)
-                    if (counter > 0) {
-                        let space = this.createSpan('SplitTextJS-char SplitTextJS-spacer')
-                        space.innerHTML = '&nbsp;'
-                        containerArray.push(space)
-                    }
-                })
-                _target.innerHTML = ''
-                containerArray.forEach(child => {
-                    _target.appendChild(child)
-                })
-                return _target
-            }
-        }
-            console.log("Hello");
-            const titles = gsap.utils.toArray('.RotateText');
-            const tl = gsap.timeline();
-
-            titles.forEach(title => {
-                const splitTitle = new SplitTextJS(title);
-                tl
-                    .from(splitTitle.chars, {
-                    opacity: 0,
-                    y: 80,
-                    rotationX: -90
-                    }, "<")
-
-                    .to(splitTitle.chars, {
-                    opacity: 0,
-                    y: 80,
-                    rotationX: -90
-                    }, "<0.5")
-            });
+            
         </script>
     </body>
 </html>
