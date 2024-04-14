@@ -4,7 +4,7 @@
 ### Hadrian's website, under construction
 
 ### Versions
-v
+[v1.0.0](https://github.com/udontur/udontur.github.io/releases/tag/v1.0.0)
 
 ### Accessible links
 - [hadrianlau.com](https://hadrianlau.com)
