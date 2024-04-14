@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Hadrian</title>
-        <link rel="icon" type="image/x-icon" href="/img/udontur.jpeg">
+        <title>
+            Hadrian
+        </title>
+        <link rel="icon" type="image/x-icon" href="/image/udontur.jpeg">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+        rel="stylesheet">
         <style>
             body{
                 background-color: #181818;
@@ -17,7 +20,9 @@
             ::-moz-selection {
                 background-color: transparent;
             }
-
+            :root {
+                color-scheme: dark;
+            }
             ::selection {
                 background-color: transparent;
             }
@@ -165,13 +170,16 @@
                 font-size: 70px;
                 margin-top: 0px;
                 margin-bottom: 0px;
-		margin-left: 40px;
+                margin-left: 40px;
             }
             .footer {
                 font-size: 12px;
                 padding: 2px;
+                color: #181818;
                 background-color: #a3dbce;
                 text-align: center;
+                max-width: none !important;
+                width: auto;
             }
             .container {
                 display: flex;
@@ -179,96 +187,102 @@
         </style>
     </head>
     <body>
-        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>  
-            <br>
-            <div class="container">
-                <h1 class="WebsiteTitle">
-                    Hello World!👋
-                </h1>
-            </div>
-            <div class="container">
-                <h1 class="WebsiteTitle">
-                    I'm
-                </h1>
-                <h1 class="Hadrian">
-                    Hadrian
-                </h1>
-            </div>
-            <br>
-            <div class="container">
-                <img class="TitleImage" src="image/udonturelong.png">
-            </div>
-            <div class="container">
-                <button class="TitleBox">
-                    🖥️ Programming
-                </button>
-            </div>
-            <div class="container">         
-                <button onclick="window.location='https://www.linkedin.com/in/hadrianlaucs';" class="MainButton">
-                    LinkedIn
-                </button>
-                <button onclick="window.location='https://github.com/udontur';" class="MainButtonMiddle">
-                    GitHub
-                </button>
-                <button onclick="window.location='https://leetcode.com/udontur';" class="MainButton">
-                    LeetCode
-                </button>
-            </div>
-            <div class="container">        
-                <button onclick="window.location='https://codeforces.com/profile/udontur';" class="MainButtonLeftBottom">
-                    CodeForces
-                </button>
-                <button onclick="window.location='https://judge.hkoi.org/user/wy_hadrianlau';" class="MainButtonMiddle">
-                    HKOI
-                </button>
-                <button onclick="window.location='https://www.khanacademy.org/profile/udontur';" class="MainButtonRightBottom">
-                    Khan
-                </button>
-            </div>
-            <div class="container">
-                <button class="TitleBox">
-                    ⚒️ Projects
-                </button>
-            </div>
-            <div class="container">         
-                <button onclick="window.location='https://github.com/udontur/cp';" class="MainButtonLeftBottom">
-                    Code Vault
-                </button>
-                <button onclick="window.location='https://udontur.github.io/page/clock.html';" class="MainButtonMiddle">
-                    Clock
-                </button>
-                <button onclick="window.location='https://udontur.github.io/page/clock_nosec.html';" class="MainButtonRightBottom">
-                    Clock (no s)
-                </button>
-            </div>
-            <div class="container">   
-                <button class="TitleBox">
-                    🤝 Socials
-                </button>
-            </div>
-            <div class="container">
-                <button onclick="window.location='https://www.linkedin.com/in/hadrianlaucs';" class="MainButtonLeftBottom">
-                    LinkedIn
-                </button>
-                <button onclick="window.location='https://github.com/udontur';" class="MainButtonMiddle">
-                    GitHub
-                </button>
-                <button onclick="window.location='https://www.instagram.com/udon.tur';" class="MainButtonRightBottom">
-                    Instagram
-                </button>
-            </div> 
+        <br>
+        <div class="container">
+            <h1 class="WebsiteTitle">
+                Hello World!👋
+            </h1>
+        </div>
+        <div class="container">
+            <h1 class="WebsiteTitle">
+                I'm
+            </h1>
+            <h1 class="Hadrian">
+                Hadrian
+            </h1>
+        </div>
+        <br>
+        <div class="container">
+            <img class="TitleImage" src="image/udonturelong.png">
+        </div>
+        <div class="container">
+            <button class="TitleBox">
+                🖥️ Programming
+            </button>
+        </div>
+        <div class="container">
+            <button onclick="window.location='https://www.linkedin.com/in/hadrianlaucs';"
+            class="MainButton">
+                LinkedIn
+            </button>
+            <button onclick="window.location='https://github.com/udontur';" class="MainButtonMiddle">
+                GitHub
+            </button>
+            <button onclick="window.location='https://leetcode.com/udontur';" class="MainButton">
+                LeetCode
+            </button>
+        </div>
+        <div class="container">
+            <button onclick="window.location='https://codeforces.com/profile/udontur';"
+            class="MainButtonLeftBottom">
+                CodeForces
+            </button>
+            <button onclick="window.location='https://judge.hkoi.org/user/wy_hadrianlau';"
+            class="MainButtonMiddle">
+                HKOI
+            </button>
+            <button onclick="window.location='https://www.khanacademy.org/profile/udontur';"
+            class="MainButtonRightBottom">
+                Khan
+            </button>
+        </div>
+        <div class="container">
+            <button class="TitleBox">
+                ⚒️ Projects
+            </button>
+        </div>
+        <div class="container">
+            <button onclick="window.location='https://github.com/udontur/cp';" class="MainButtonLeftBottom">
+                Code Vault
+            </button>
+            <button onclick="window.location='https://udontur.github.io/page/clock.html';"
+            class="MainButtonMiddle">
+                Clock
+            </button>
+            <button onclick="window.location='https://udontur.github.io/page/clock_nosec.html';"
+            class="MainButtonRightBottom">
+                Clock (no s)
+            </button>
+        </div>
+        <div class="container">
+            <button class="TitleBox">
+                🤝 Socials
+            </button>
+        </div>
+        <div class="container">
+            <button onclick="window.location='https://www.linkedin.com/in/hadrianlaucs';"
+            class="MainButtonLeftBottom">
+                LinkedIn
+            </button>
+            <button onclick="window.location='https://github.com/udontur';" class="MainButtonMiddle">
+                GitHub
+            </button>
+            <button onclick="window.location='https://www.instagram.com/udon.tur';"
+            class="MainButtonRightBottom">
+                Instagram
+            </button>
+        </div>
+        <center>
+            <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" class="BackToTopButton">
+                Back to top
+            </button>
+        </center>
+        <footer class="footer">
             <center>
-                <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" class="BackToTopButton">
-                    Back to top
-                </button>
-            </center> 
-            <footer class="footer">
-                <cetner>
-                    © 2024 Hadrian
-                </cetner>
-            </footer>
+                © 2024 Hadrian
+            </center>
+        </footer>
         <script>
-            
         </script>
     </body>
 </html>
