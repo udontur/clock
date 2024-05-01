@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Clock (no s)</title>
-        <link rel="icon" type="image/x-icon" href="/image/udontur.jpeg">
+        <title>Clock</title>
+        <link rel="icon" type="image/x-icon" href="/image/udontur.png">
         <style>
             body {
                 background-color: #181818;
@@ -10,7 +10,7 @@
                 justify-content: center;
                 align-items: center;
                 height: 100vh;
-                font-size: 36vw;
+                font-size: 23vw;
                 font-family: Arial, sans-serif;
                 color: white;
                 margin: 0; 
@@ -25,7 +25,7 @@
                 const hours = now.getHours().toString().padStart(2, "0");
                 const minutes = now.getMinutes().toString().padStart(2, "0");
                 const seconds = now.getSeconds().toString().padStart(2, "0");
-                document.body.textContent = `${hours}:${minutes}`;
+                document.body.textContent = `${hours}:${minutes}:${seconds}`;
             }
             updateClock();
             setInterval(updateClock, 1000);
