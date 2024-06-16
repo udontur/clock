@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-5VBXRTC113"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-5VBXRTC113');
+        </script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+        <title>Clock (no s)</title>
+        <link rel="icon" type="image/x-icon" href="/image/udontur.png">
+        <style>
+            body {
+                background-color: #181818;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                font-size: 41vw;
+                font-family: JetBrains Mono;
+                color: white;
+                margin: 0; 
+                font-weight: 600;
+                cursor: default;
+            }
+            ::-moz-selection {
+                background-color: transparent;
+            }
+            :root {
+                color-scheme: dark;
+            }
+            ::selection {
+                background-color: transparent;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            function updateClock() {
+                const now = new Date();
+                const hours = now.getHours().toString().padStart(2, "0");
+                const minutes = now.getMinutes().toString().padStart(2, "0");
+                const seconds = now.getSeconds().toString().padStart(2, "0");
+                document.body.textContent = `${hours}${minutes}`;
+            }
+            updateClock();
+            setInterval(updateClock, 1000);
+        </script>
+    </body>
+</html>
