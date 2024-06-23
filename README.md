@@ -1,6 +1,4 @@
 # hadrianlau.com
-
-## Description
 [hadrianlau.com](https://hadrianlau.com) is a website created by [Hadrian (udontur)](https://github.com/udontur) using HTML, Tailwind CSS, CSS and JS from scratch.
 
 ## Accessible links
