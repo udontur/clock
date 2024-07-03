@@ -8,5 +8,5 @@
 
 ## Page
 - [Home page](https://hadrianlau.com)
-- [Clock](https://hadrianlau.com/clock.html) (Add `?second=false` at the back of the URL to remove the "seconds" section)
+- [Clock](https://hadrianlau.com/clock) (Add `?second=false` at the back of the URL to remove the "seconds" section)
 - [404 not found](https://hadrianlau.com/404.html)

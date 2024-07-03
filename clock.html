@@ -1,3 +1,6 @@
+---
+permalink: /clock
+---
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,6 +15,11 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
         <link rel="icon" type="image/webp" href="img/favicon.webp">
+        <script>
+            if (window.location.pathname.endsWith('/')) {
+                window.location.href = window.location.pathname.slice(0, -1);
+            }
+        </script>
         <title>Clock</title>
         <style>
             ::-moz-selection {
