@@ -9,6 +9,7 @@
             gtag('config', 'G-SQB118V6BD');
         </script>
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet"> 
@@ -19,6 +20,9 @@
             ::selection { background-color: transparent; }
             ::-moz-selection { background-color: transparent; }
             :root { color-scheme: dark; }
+            ::-webkit-scrollbar {
+                width: 0px;
+            }
             body{
                 font-family: "M PLUS Rounded 1c", sans-serif;
             }
@@ -27,7 +31,7 @@
             }
         </style>
     </head>
-    <body class="bg-gray-950 scroll-smooth"> <!--npx tailwindcss -i ./src/input.css -o ./src/output.css --watch-->
+    <body class="bg-gray-950 scroll-smooth duration-700"> <!--npx tailwindcss -i ./src/input.css -o ./src/output.css --watch-->
         <br>
         <p class="text-green-400 text-center text-5xl my-6">Hadrian is COOKING UP hadrianlau.com!</p>
         <img class="mx-auto w-[400px] rounded-xl" src="img/cook.webp">
@@ -35,18 +39,20 @@
         <br>
         <p class="text-green-400 text-center text-5xl my-6">Tools</p>
         <ul class="text-white text-center text-6xl list-none">
-            <li class="inline mr-2 transition-all hover:text-green-400"><a href="https://hadrianlau.com/clock"><i class='bx bx-time-five'></i></a></li>
-            <li class="inline transition-all hover:text-green-400"><a href="https://github.com/udontur/cs"><i class='bx bxs-bank'></i></a></li>
+            <li class="inline mr-2 transition-all hover:text-green-400"><a href="https://hadrianlau.com/clock"><iconify-icon icon="ph:clock-bold"></iconify-icon></a></li>
+            <li class="inline mr-2 transition-all hover:text-green-400"><a href="https://github.com/udontur/cs"><iconify-icon icon="carbon:file-storage"></iconify-icon></a></li>
+            <li class="inline mr-2 transition-all hover:text-green-400"><a href="https://github.com/udontur/ossd-mark-calculator"><iconify-icon icon="tabler:calculator-filled"></iconify-icon></a></li>
+
         </ul>
         <br>
         <br>
-        <p class="text-green-400 text-center text-5xl my-6">Contact</p>
+        <p class="text-green-400 text-center text-5xl font-bold my-6">Contact</p>
         <ul class="text-white text-center text-6xl list-none">
-            <li class="inline mr-2 transition-all hover:text-green-400"><a href="https://github.com/udontur"><i class='bx bxl-github'></i></a></li>
-            <li class="inline mr-2 transition-all hover:text-green-400"><a href="https://leetcode.com/u/udontur/"><i class='bx bx-code-block'></i></a></li>
-            <li class="inline mr-2 transition-all hover:text-green-400"><a href="https://codeforces.com/profile/udontur"><i class='bx bx-bar-chart-alt-2' ></i></a></li>
-            <li class="inline transition-all hover:text-green-400"><a href="mailto:102845@dsc.edu.hk"><i class='bx bx-envelope' ></i></a></li>
-            <li class="inline transition-all hover:text-green-400"><a href="https://www.instagram.com/udon.tur"><i class='bx bxl-instagram' ></i></a></li>
+            <li class="inline mr-2 transition-all hover:text-green-400"><a href="https://github.com/udontur"><iconify-icon icon="mdi:github"></iconify-icon></a></li>
+            <li class="inline mr-2 transition-all hover:text-green-400"><a href="https://leetcode.com/u/udontur/"><iconify-icon icon="simple-icons:leetcode"></iconify-icon></a></li>
+            <li class="inline mr-2 transition-all hover:text-green-400"><a href="https://codeforces.com/profile/udontur"><iconify-icon icon="simple-icons:codeforces"></iconify-icon></a></li>
+            <li class="inline mr-2 transition-all hover:text-green-400"><a href="mailto:102845@dsc.edu.hk"><iconify-icon icon="lucide:mail"></iconify-icon></a></li>
+            <li class="inline mr-2 transition-all hover:text-green-400"><a href="https://www.instagram.com/udon.tur"><iconify-icon icon="mdi:instagram"></iconify-icon></a></li>
         </ul>
         <br>
         <br>
