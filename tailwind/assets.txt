@@ -1,0 +1,2 @@
+Re-run tailwind css:
+npx tailwindcss -i ./tailwind/input.css -o ./tailwind/output.css --watch

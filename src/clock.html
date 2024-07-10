@@ -19,11 +19,6 @@ permalink: /clock
         <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="../tailwind/output.css">  
         <link rel="icon" type="image/webp" href="../img/favicon.webp">
-        <!--<script>
-            if (window.location.pathname.endsWith('/')) {
-                window.location.href = window.location.pathname.slice(0, -1);
-            }
-        </script>-->
         <title>Clock</title>
         <style>
             ::-moz-selection {
@@ -68,7 +63,7 @@ permalink: /clock
                 const minutes = now.getMinutes().toString().padStart(2, "0");
                 document.body.textContent = `${hours}:${minutes}`;
             }
-            const second = get_query_string("second");
+            const second = get_query_string("seconds");
             if(second === "false"){
                 document.body.style.fontSize = "34vw"; 
                 second_false();
