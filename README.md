@@ -10,4 +10,4 @@
 - [Home page](https://hadrianlau.com)
 - [Clock](https://hadrianlau.com/clock)
   - Add `?seconds=false` at the back of the URL to remove the "seconds" section
-- [404 not found](https://hadrianlau.com/404.html)
+- [404 not found](https://hadrianlau.com/thank-you-for-viewing-my-website)
