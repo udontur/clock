@@ -1,6 +1,6 @@
 <div align="center">
   <h1 align="center">
-  <a href="https://hadrianlau.com"  style="color: #4ade80">
+  <a href="https://hadrianlau.com">
     hadrianlau.com
   </a>
     </h1>
