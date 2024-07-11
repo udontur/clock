@@ -1,5 +1,5 @@
-<h1>
-  <center>
-    <a href="https://hadrianlau.com">hadrianlau.com</a>
-  </center>
-</h1>
+<div align="center">
+  <a href="https://hadrianlau.com">
+    <h1 align="center">ossd-mark-calculator</h1>
+  </a>
+</div>
