@@ -1,14 +1,7 @@
-# hadrianlau.com
-[hadrianlau.com](https://hadrianlau.com) is a personal website created by [Hadrian (udontur)](https://github.com/udontur) using HTML, Tailwind CSS, CSS and JS from scratch.
-
-## Accessible links
-- [hadrianlau.com](https://hadrianlau.com)
-- [udontur.github.io](https://udontur.github.io)
-- [bit.ly/udontur](https://bit.ly/udontur)
-
-## Page
-- [Home page](https://hadrianlau.com)
-- [Clock](https://hadrianlau.com/clock)
-  - Add `?seconds=false` at the back of the URL to remove the "seconds" section
-- [Awards](https://hadrianlau.com/awards)
-- [404 not found](https://hadrianlau.com/thank-you-for-viewing-my-website)
+<div align="center"> 
+  <h1 align="center"> 
+    <a href="https://hadrianlau.com"> 
+      hadrianlau.com 
+    </a> 
+  </h1> 
+</div>
