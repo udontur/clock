@@ -7,42 +7,6 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-size: 25px;
-}
-.navbar button {
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-.navbar button:hover {
-    background-color: #3fbd6d !important;
-}
-.left-button {
-    margin-right: auto;
-}
-.right-buttons {
-    display: flex;
-    gap: 10px;
-}
-.right-image { 
-    float: right; 
-    width: 300px;
-    border-radius: 40px;
-} 
-.hello{
-    color: white;
-    font-size: 60px;
-}
-.hadrian{
-    color: #4ade80;
-    font-size: 80px;
-}
  :root {
     color-scheme: dark;
     --ft:"M PLUS Rounded 1c", sans-serif;
@@ -142,6 +106,41 @@
     --light:var(--dark-default);
     --dark:var(--light-default)
 }
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 25px;
+}
+.navbar button {
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.navbar button:hover {
+    background-color: #3fbd6d !important;
+}
+.left-button {
+    margin-right: auto;
+}
+.right-buttons {
+    display: flex;
+    gap: 10px;
+}
+.right-image { 
+    float: right; 
+    width: 300px;
+    border-radius: 40px;
+}
+.itemblock p{
+    color: rgb(173, 173, 173);
+    margin-top: -17px;
+}
+.itemtitle{
+    color: var(--accent);
+}
 abbr,rp,rt {
     color:var(--muted)
 }
@@ -231,14 +230,6 @@ progress {
 }
 progress::-webkit-progress-value {
     background-color:currentColor
-}
-.itemblock p{
-    color: rgb(173, 173, 173);
-    margin-top: -17px;
-}
-.itemtitle{
-    color: var(--accent);
-
 }
 progress::-moz-progress-bar {
     background-color:currentColor
