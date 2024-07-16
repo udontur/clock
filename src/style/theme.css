@@ -141,6 +141,13 @@
 .itemtitle{
     color: var(--accent);
 }
+.more{
+    font-size: 22px !important; 
+    color: #4493f8;
+}
+.more:hover{
+    color: white;
+}
 abbr,rp,rt {
     color:var(--muted)
 }
