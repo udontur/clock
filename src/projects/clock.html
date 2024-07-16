@@ -1,1 +1,89 @@
----permalink:/clock---<!doctypehtml><html lang=en><head></head><meta charset=UTF-8><meta content="width=device-width,initial-scale=1"name=viewport><meta content="Simple dark mode clock - Made by Hadrian Lau (@udontur)"name=description><script async src="https://www.googletagmanager.com/gtag/js?id=G-SQB118V6BD"></script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-SQB118V6BD")</script><link href=https://fonts.googleapis.com rel=preconnect><link href=https://fonts.gstatic.com rel=preconnect crossorigin><link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap"rel=stylesheet><link href=/asset/favicon/favicon-clock.webp rel=icon type=image/webp><title>Clock</title><style>::-moz-selection{background-color:transparent}:root{color-scheme:dark}::selection{background-color:transparent}body{height:100vh;font-family:"M PLUS Rounded 1c",sans-serif;font-weight:900;background-color:#000;color:#fff;display:flex;justify-content:center;align-items:center;margin:0;cursor:default}</style></head><body><script>function get_query_string(t){let e=new URLSearchParams(window.location.search);return e.get(t)}function second_true(){let t=new Date,e=t.getHours().toString().padStart(2,"0"),n=t.getMinutes().toString().padStart(2,"0"),o=t.getSeconds().toString().padStart(2,"0");document.body.textContent=`${e}:${n}:${o}`}function second_false(){let t=new Date,e=t.getHours().toString().padStart(2,"0"),n=t.getMinutes().toString().padStart(2,"0");document.body.textContent=`${e}:${n}`}const second=get_query_string("seconds");"false"===second?(document.body.style.fontSize="34vw",second_false(),setInterval(second_false,1e3)):(document.body.style.fontSize="22vw",second_true(),setInterval(second_true,1e3));</script></body></html>
+---
+permalink: /clock
+---
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description"  content="Simple dark mode clock - Made by Hadrian Lau (@udontur)">
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-SQB118V6BD"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+            gtag("config", "G-SQB118V6BD");
+        </script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/webp" href="/asset/favicon/favicon-clock.webp" />
+        <title>Clock</title>
+        <style>
+            ::-moz-selection {
+                background-color: transparent;
+            }
+
+            :root {
+                color-scheme: dark;
+            }
+
+            ::selection {
+                background-color: transparent;
+            }
+
+            body {
+                height: 100vh;
+                font-family: "M PLUS Rounded 1c", sans-serif;
+                font-weight: 900;
+                background-color: #000000;
+                color: #ffffff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0;
+                cursor: default;
+            }
+        </style>
+    </head>
+
+    <body>
+        <script>
+            function get_query_string(name) {
+                const query_string = new URLSearchParams(
+                    window.location.search
+                );
+                return query_string.get(name);
+            }
+            function second_true() {
+                const now = new Date();
+                const hours = now.getHours().toString().padStart(2, "0");
+                const minutes = now.getMinutes().toString().padStart(2, "0");
+                const seconds = now.getSeconds().toString().padStart(2, "0");
+                document.body.textContent = `${hours}:${minutes}:${seconds}`;
+            }
+            function second_false() {
+                const now = new Date();
+                const hours = now.getHours().toString().padStart(2, "0");
+                const minutes = now.getMinutes().toString().padStart(2, "0");
+                document.body.textContent = `${hours}:${minutes}`;
+            }
+            const second = get_query_string("seconds");
+            if (second === "false") {
+                document.body.style.fontSize = "34vw";
+                second_false();
+                setInterval(second_false, 1000);
+            } else {
+                document.body.style.fontSize = "22vw";
+                second_true();
+                setInterval(second_true, 1000);
+            }
+        </script>
+    </body>
+</html>
