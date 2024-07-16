@@ -138,6 +138,10 @@
     color: rgb(173, 173, 173);
     margin-top: -17px;
 }
+.itemblock-white p{
+    color: rgb(199, 199, 199);
+    margin-top: -17px;
+}
 .itemtitle{
     color: var(--accent);
 }
