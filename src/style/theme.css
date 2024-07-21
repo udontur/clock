@@ -84,6 +84,15 @@ img {
         padding: 5px 10px !important;
     }
 }
+@media only screen and (max-width: 508px) {
+    .right-image {
+        float: left !important;
+        margin: auto !important;
+        display: block !important;
+        width: 300px !important;
+        border-radius: 40px !important;
+    }
+}
 @media only screen and (max-width: 600px) {
     .right-image {
         margin: auto !important;
