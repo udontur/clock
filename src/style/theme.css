@@ -51,11 +51,10 @@ button {
     margin: 0.25rem 0.125rem;
     color: var(--accent);
     text-transform: none;
-    transition: background var(--tr-duration), color var(--tr-duration), filter var(--tr-duration);
+    transition: var(--tr-duration);
 }
 button:hover {
     background: var(--accent);
-    color: var(--contrast);
     color: white;
     border-color: transparent;
 }
@@ -63,6 +62,7 @@ a {
     color: var(--link);
     font-weight: 400;
     text-decoration: inherit;
+    transition: var(--tr-duration);
 }
 a:hover {
     text-decoration: underline;
@@ -74,6 +74,23 @@ img {
     max-width: 100%;
     border-radius: var(--bd-radius);
     margin: auto;
+}
+@media only screen and (max-width: 600px) {
+    .navbar {
+        font-size: 15px !important;
+        
+    }
+    .navbar button{
+        padding: 5px 10px !important;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .right-image {
+        margin: auto !important;
+        display: block !important;
+        width: 300px !important;
+        border-radius: 40px !important;
+    }
 }
 .navbar {
     display: flex;
@@ -120,3 +137,4 @@ img {
 .more:hover {
     color: white;
 }
+
