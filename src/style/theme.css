@@ -13,6 +13,7 @@
     --ct-width: 1024px;
 }
 body {
+    background-color: var(--bg-default);
     overflow-y: scroll;
     max-width: var(--ct-width);
     padding: 0 1.5rem;
