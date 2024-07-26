@@ -133,6 +133,35 @@ img {
     color: rgb(173, 173, 173);
     margin-top: -17px;
 }
+.itemblock-clickable h3 {
+    color: white !important;
+}
+.itemblock-clickable a {
+    text-decoration: none !important;
+}
+.itemblock-clickable button {
+    margin-top: 0.25rem !important;
+    background: var(--bg-default);
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: 1.5;
+    display: inline-block;
+    padding: 0.75rem 0.75rem;
+    padding-bottom: 0rem !important;
+    margin: 0.25rem 0.125rem;
+    text-transform: none;
+    text-align: left;
+    transition: var(--tr-duration);
+}
+.itemblock-clickable button:hover {
+    background: rgba(29, 29, 29, 0.966) !important;
+    border-color: transparent;
+}
+.itemblock-clickable p {
+    color: rgb(173, 173, 173);
+    margin-top: -17px;
+}
 .itemblock-white p {
     color: rgb(199, 199, 199);
     margin-top: -17px;
