@@ -1,8 +1,6 @@
 <br />
 <div align="center">
-  <a href="https://hadrianlau.com">
-    <h1 align="center">hadrianlau.com</h3>
-  </a>
+  <h1 align="center">hadrianlau.com</h3>
   <p align="center">
     🌐 Hadrian's (udontur) website
     <br />
@@ -23,7 +21,8 @@
 |-----|-----|
 |[/](https://hadrianlau.com)|Home page|
 |[/bio](https://hadrianlau.com/bio)|Education and experience|
-|[/projects](https://hadrianlau.com/)|Projects|
-|[/contests](https://hadrianlau.com/)|Contests and awards|
-|[/clock](https://hadrianlau.com/)|Simple dark mode clock, add ```?seconds=false``` to remove the "seconds" section|
+|[/projects](https://hadrianlau.com/projects)|Projects|
+|[/contests](https://hadrianlau.com/contests)|Contests and awards|
+|[/blog](https://hadrianlau.com/blog)|Blog and tuorials|
+|[/clock](https://hadrianlau.com/clock)|Simple dark mode clock, add ```?seconds=false``` to remove the "seconds" section|
 |[/404](https://hadrianlau.com/thank-you-for-using-hadrianlau-com)|404 Not found|
