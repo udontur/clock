@@ -68,9 +68,6 @@ a {
 a:hover {
     text-decoration: underline;
 }
-p {
-    margin: 0 auto 1rem;
-}
 img {
     max-width: 100%;
     border-radius: var(--bd-radius);
