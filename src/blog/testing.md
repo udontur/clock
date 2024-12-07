@@ -1,5 +1,6 @@
 ---
 permalink: /blog/test
+theme: minima-dark
 ---
 
 # This is a testing site
