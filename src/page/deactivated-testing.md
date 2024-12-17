@@ -1,6 +1,6 @@
----
+<!-- ---
 permalink: /blog/test
----
+--- -->
 
 # This is a testing site
 ## Chapter 1: trying markdown
