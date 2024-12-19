@@ -1,5 +1,3 @@
-// oneko.js: https://github.com/adryd325/oneko.js
-
 (function oneko() {
     const isReducedMotion =
         window.matchMedia(`(prefers-reduced-motion: reduce)`) === true ||
@@ -96,7 +94,7 @@
         nekoEl.style.top = `${nekoPosY - 16}px`;
         nekoEl.style.zIndex = 2147483647;
 
-        let nekoFile = "/js/oneko/oneko.gif"
+        let nekoFile = "/src/js/oneko/oneko.gif"
         const curScript = document.currentScript
         if (curScript && curScript.dataset.cat) {
             nekoFile = curScript.dataset.cat
@@ -116,7 +114,6 @@
     let lastFrameTimestamp;
 
     function onAnimationFrame(timestamp) {
-        // Stops execution if the neko element is removed from DOM
         if (!nekoEl.isConnected) {
             return;
         }
@@ -143,7 +140,6 @@
     function idle() {
         idleTime += 1;
 
-        // every ~ 20 seconds
         if (
             idleTime > 10 &&
             Math.floor(Math.random() * 200) == 0 &&
@@ -212,7 +208,6 @@
 
         if (idleTime > 1) {
             setSprite("alert", 0);
-            // count down after being alerted before moving
             idleTime = Math.min(idleTime, 7);
             idleTime -= 1;
             return;
