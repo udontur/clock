@@ -49,7 +49,6 @@ body{
     background-color: #f1c40f;
     color: #ec3750;
     border-color: #ff8c37;
-
     transition-duration: 0.25s;
     transition-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
 }
