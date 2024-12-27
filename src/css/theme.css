@@ -32,6 +32,8 @@ img{
 .name{
     font-size: 4.2em;
     font-weight: 600;
+    display: flex;
+    justify-content: center;
 }
 .info{
     display: flex;
@@ -44,7 +46,6 @@ button{
     border: solid;
     border-width: 3px;
     border-radius: 8px;
-
     border-color: #a1e754;
 }
 a{
