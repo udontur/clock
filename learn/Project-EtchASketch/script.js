@@ -1,4 +1,4 @@
-let numberOfBlocks = prompt("How big is the canvas? (Max: 96)");
+let numberOfBlocks = prompt("How big is the canvas? (Recommended: 32, Max: 96)");
 while(!(numberOfBlocks>=0&&numberOfBlocks<=96)){
     if(numberOfBlocks>96) numberOfBlocks=prompt("WAY Too big! (Max: 96)");
     else numberOfBlocks=prompt("Negative blocks? Imaginary... ");
