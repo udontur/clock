@@ -1,56 +1,89 @@
-let btn0=document.querySelector(".0");
-let btn1=document.querySelector(".1");
-let btn2=document.querySelector(".2");
-let btn3=document.querySelector(".3");
-let btn4=document.querySelector(".4");
-let btn5=document.querySelector(".5");
-let btn6=document.querySelector(".6");
-let btn7=document.querySelector(".7");
-let btn8=document.querySelector(".8");
-let btn9=document.querySelector(".9");
-let btnAddi=document.querySelector(".addi");
-let btnSubt=document.querySelector(".subt");
-let btnMult=document.querySelector(".mult");
-let btnDivi=document.querySelector(".divi");
-let btnEqua=document.querySelector(".equa");
-let btnCanc=document.querySelector(".canc");
-
-function calculate(a, op, b){
-    if(op==="+") return a+b;
-    else if(op==="-") return a-b;
-    else if(op==="*") return a*b;
-    else return a/b;
-}
-
-let equation={
+let equation = {
     first: "",
     operator: null,
     second: "",
-    answer: null;
     state: 1
 }
 
-btn1.addEventListener("click", ()=>{
-    if(equation.state===1){
-        equation.first+="1";
+function toNumber(inString) {
+    return +inString;
+}
 
-    }else if(equation.state===2){
-        equation.second+="1";
+function calculate(first, operator, second) {
+    first = toNumber(first);
+    second = toNumber(second);
+    if (operator === "+") return first + second;
+    else if (operator === "-") return first - second;
+    else if (operator === "×") return first * second;
+    else return first / second;
+}
 
+function displayContent(inString) {
+    let screen = document.querySelector(".screen");
+    screen.textContent = inString;
+}
+
+for (let key = 0; key <= 9; key++) {
+    let btnClass = ".btn" + String(key);
+    let btn = document.querySelector(btnClass);
+    btn.addEventListener("click", () => {
+        if (equation.state === 1 || equation.state === 3) {
+            if (equation.state === 3) {
+                equation.first = "";
+                equation.state = 1;
+            }
+            equation.first += String(key);
+            displayContent(equation.first);
+
+        } else if (equation.state === 2) {
+            equation.second += String(key);
+            displayContent(equation.first + equation.operator + equation.second);
+        }
+    });
+}
+
+let listOfOperator = [["+", "addition"], ["-", "subtraction"], ["×", "multiplication"], ["÷", "division"]];
+for (let key of listOfOperator) {
+    let operator = key[0];
+    let operatorName = key[1];
+    let btnClass = "." + operatorName;
+    console.log(btnClass);
+    let btn = document.querySelector(btnClass);
+    btn.addEventListener("click", () => {
+        if (equation.state === 1 && equation.first === "" && operator === "-") {
+            equation.first = "-";
+            displayContent(equation.first);
+        } else if (equation.state === 1 || equation.state === 3 || (equation.state === 2 && equation.second === "")) {
+            equation.operator = operator;
+            equation.state = 2;
+            displayContent(equation.first + equation.operator);
+        }
+    });
+}
+
+let btnEqua = document.querySelector(".equa");
+let btnCanc = document.querySelector(".canc");
+function isFloat(number) {
+    if (Math.floor(number) != number) return true;
+    else return false;
+}
+btnEqua.addEventListener("click", () => {
+    if (equation.state === 2) {
+        let equationAnswer = calculate(equation.first, equation.operator, equation.second);
+        if (isFloat(equationAnswer))
+            equationAnswer = Number(equationAnswer.toFixed(8));
+        displayContent(String(equationAnswer));
+        equation.first = equationAnswer;
+        equation.operator = null;
+        equation.second = "";
+        equation.state = 3;
     }
 });
-btnAddi.addEventListener("click", ()=>{
-    if(equation.state===1){
-        equation.operator="+";
-        equation.state=2;
-    }
-});
-btnEqua.addEventListener("click", ()=>{
-    if(equation.state===2){
-        let equationAnswer=calculate(equation.first, equation.operator, equation.second);
-        equation.first=equationAnswer;
-        equation.operator=null;
-        equation.second=null;
-        equation.state=1;
-    }
+
+btnCanc.addEventListener("click", () => {
+    displayContent("");
+    equation.first = "";
+    equation.operator = null;
+    equation.second = "";
+    equation.state = 1;
 });
