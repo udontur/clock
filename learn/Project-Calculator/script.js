@@ -53,7 +53,7 @@ for (let key of listOfOperator) {
         if (equation.state === 1 && equation.first === "" && operator === "-") {
             equation.first = "-";
             displayContent(equation.first);
-        } else if (equation.state === 1 || equation.state === 3 || (equation.state === 2 && equation.second === "")) {
+        } else if ((equation.state === 1&&equation.first!=""&&equation.first!="-") || equation.state === 3 || (equation.state === 2 && equation.second === "")) {
             equation.operator = operator;
             equation.state = 2;
             displayContent(equation.first + equation.operator);
