@@ -7,6 +7,8 @@
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
+    color-scheme: dark;
+    
 }
 
 body {
