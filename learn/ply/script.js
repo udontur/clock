@@ -1,21 +1,4 @@
-function multiplyNumeric(obj) {
-    for(let key in obj){
-        if(typeof obj[key] === "number"){
-            obj[key]*=2;
-        }
-    }
-}
-
-let menu = {
-    width: 200,
-    height: 300,
-    title(){
-        console.log(`My menu is \$${this.width}`);
-    },
-};
-
-multiplyNumeric(menu);
-
-console.log(menu)
-
-menu.title();
+let a=[9, 2, 3, 5, 7, 11];
+a=a.filter(a1=>a1%2!=0);
+a.sort((a1,b1)=>a1-b1);
+console.log(a);
