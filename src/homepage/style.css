@@ -53,6 +53,11 @@ body {
     max-width: 1250px;
     margin: 0 auto;
     box-shadow: 0px 0px 20px 20px #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 32px;
 }
 .idk-container{
     display: flex;
@@ -169,6 +174,7 @@ br{
     justify-content: flex-start;
     max-width: 1200px;
     gap: 16px;
+    flex-wrap: wrap;
 }
 .no-under{
     text-decoration: none !important;
@@ -196,9 +202,6 @@ button:hover{
     border: solid;
     border-width: 2px;
     border-color: #a1e752;
-}
-.card div{
-
 }
 .footer{
     height: 96px;
