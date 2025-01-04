@@ -28,7 +28,12 @@
 * {
     color-scheme: dark;
 }
-
+div{
+    cursor: default;
+}
+.high{
+    color: #a1e754
+}
 body {
     font-family: 'Phantom Sans';
     font-weight: 400;
@@ -214,4 +219,8 @@ button:hover{
 }
 a{
     color: #fff;
+}
+.fun-thanks{
+    color: #000;
+    background: linear-gradient(0.25turn, #a1e754, #8FDEC6);
 }
