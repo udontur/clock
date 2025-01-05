@@ -227,3 +227,13 @@ a{
     color: #000;
     background: linear-gradient(0.25turn, #a1e754, #8FDEC6);
 }
+ul{
+    list-style: none;
+    margin-left: -32px;
+}
+.big{
+    font-size: 21px;
+}
+b{
+    color: #a1e754
+}
