@@ -28,11 +28,18 @@
 * {
     color-scheme: dark;
 }
+.funny-quote{
+    display: flex;
+    align-items: center;
+}
 div{
     cursor: default;
 }
 .high{
     color: #a1e754
+}
+li{ 
+    margin-bottom: 5px;
 }
 body {
     font-family: 'Phantom Sans';
@@ -148,7 +155,6 @@ br{
 }
 .card{
     display: flex;
-    max-width: 768px;
     background-color: #28292A;
     padding: 16px;
     border-radius: 24px;
@@ -200,6 +206,7 @@ br{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     max-width: 1200px;
     gap: 16px;
     flex-wrap: wrap;
@@ -256,7 +263,6 @@ b{
 }
 
 .footer{
-    height: 32px;
     background: linear-gradient(0.25turn, #a1e754, #8FDEC6);
     border-start-end-radius: 16px;
     border-start-start-radius: 16px;
@@ -264,6 +270,6 @@ b{
     margin: auto;
     margin-top: 96px;
     box-shadow: 0px 0px 20px 20px #fff;
-    padding-top: 16px;
+    padding: 16px;
     text-align: center;
 }
