@@ -42,8 +42,8 @@ body {
     background-color: #202124;
     color: fff;
     margin: 0 auto;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 .put-something-here-so-it-looks-nicer{
     height: 72px;
@@ -71,9 +71,37 @@ body {
     flex-wrap: wrap;
     width: 1200px;
     min-height: 700px;
-    min-width: 1000px;
 }
-
+@media (width <= 1025px) {
+    .profile-pic{
+        width: 400px !important;
+    }
+    .name{
+        font-size: 96px !important;
+    }
+    .hello{
+        font-size: 24px !important;
+    }
+    .landing{
+        font-size: 16px;
+    }
+}
+@media (width <= 870px) {
+    .landing{
+        justify-content: center !important;
+    }
+}
+@media (width <= 450px) {
+    .landing{
+        justify-content: center !important;
+    }
+    .name{
+        font-size: 72px !important;
+    }
+    .profile-pic{
+        width: 300px !important;
+    }
+}
 .hello {
     font-size: 48px;
     margin-left: -2px;
@@ -120,7 +148,7 @@ br{
 }
 .card{
     display: flex;
-    width: 768px;
+    max-width: 768px;
     background-color: #28292A;
     padding: 16px;
     border-radius: 24px;
@@ -171,7 +199,7 @@ br{
 .linktree{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     max-width: 1200px;
     gap: 16px;
     flex-wrap: wrap;
@@ -203,18 +231,7 @@ button:hover{
     border-width: 2px;
     border-color: #a1e752;
 }
-.footer{
-    height: 96px;
-    background: linear-gradient(0.25turn, #a1e754, #8FDEC6);
-    border-start-end-radius: 16px;
-    border-start-start-radius: 16px;
-    max-width: 1200px;
-    margin: auto;
-    margin-top: 96px;
-    box-shadow: 0px 0px 20px 20px #fff;
-    padding-top: 32px;
-    text-align: center;
-}
+
 .thanks{
 
     font-size: 24px;
@@ -236,4 +253,17 @@ ul{
 }
 b{
     color: #a1e754
+}
+
+.footer{
+    height: 32px;
+    background: linear-gradient(0.25turn, #a1e754, #8FDEC6);
+    border-start-end-radius: 16px;
+    border-start-start-radius: 16px;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 96px;
+    box-shadow: 0px 0px 20px 20px #fff;
+    padding-top: 16px;
+    text-align: center;
 }

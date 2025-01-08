@@ -11,6 +11,7 @@ body {
     scroll-behavior: smooth;
     overflow-x: hidden;
     padding: 5rem 0px;
+    padding: 24px;
 }
 
 img {
