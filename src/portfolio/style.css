@@ -46,7 +46,6 @@ body {
     padding-right: 16px;
 }
 .put-something-here-so-it-looks-nicer{
-    height: 72px;
     background: linear-gradient(0.25turn, #a1e754, #8FDEC6);
     border-end-end-radius: 16px;
     border-end-start-radius: 16px;
@@ -54,8 +53,9 @@ body {
     margin: 0 auto;
     box-shadow: 0px 0px 20px 20px #fff;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    padding: 16px 16px;
     font-weight: 600;
     font-size: 32px;
 }
@@ -258,6 +258,10 @@ button:hover{
     border: solid;
     border-width: 2px;
     border-color: #a1e752;
+}
+.home{
+    padding: 8px !important;
+    border-radius: 8px;
 }
 
 .thanks{
